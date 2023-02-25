@@ -12,12 +12,12 @@ public abstract class JobField {
     public JobField (String value){ this(); this.value = value; this.id = getId();}
 
     @Override
-    public final String toString() {
+    public String toString() {
         return value;
     }
 
     @Override
-    public final boolean equals(Object o) {
+    public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof JobField)) return false;
         JobField that = (JobField) o;
@@ -25,7 +25,7 @@ public abstract class JobField {
     }
 
     @Override
-    public final int hashCode() {
+    public int hashCode() {
         return Objects.hash(getId(), getValue());
     }
 
