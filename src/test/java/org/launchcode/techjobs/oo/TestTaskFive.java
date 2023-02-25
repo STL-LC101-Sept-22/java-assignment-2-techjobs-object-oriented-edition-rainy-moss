@@ -80,6 +80,7 @@ public class TestTaskFive extends AbstractTest {
         }
     }
 
+
     @Test
     public void testTestToStringContainsCorrectLabelsAndDataCallsToString (@Mocked Job job) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         Class jobTestClass = getClassByName("test.JobTest");
@@ -116,6 +117,7 @@ public class TestTaskFive extends AbstractTest {
         String jobString = getJobString(job);
         assertEquals(jobString, job.toString());
     }
+
 
     @Test
     public void testTestToStringHandlesEmptyFieldExists () throws ClassNotFoundException {
